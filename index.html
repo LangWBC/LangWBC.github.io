@@ -164,89 +164,143 @@
 <!-- End teaser video -->
 
 <!-- Begin Demo Section -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .gallery-container {
+      width: 100%;
+      overflow-x: auto;
+      padding: 20px 0;
+    }
 
-<!-- 1. Diverse Motions -->
+    .gallery {
+      display: flex;
+      gap: 20px;
+      padding: 0 20px;
+      /* 防止在iOS上出现弹性滚动 */
+      -webkit-overflow-scrolling: touch;
+    }
 
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Diverse Motions</h2>
-        <tr>
-          <td>
+    .gallery-item {
+      flex: 0 0 auto;
+      width: 400px; /* 或其他合适的固定宽度 */
+    }
 
-            <div class="row">
-              <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"><i> A person is moving forward briskly.</i></h3>
-                  <video autoplay muted loop playsinline controls src="static/videos/4276ForwardBriskly.MOV" width="100%"
-                         style="border-radius:10px; "></video>
-              </div>
-              <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"><i>A person walking backwards slowly</i> </h3>
-                <video autoplay muted loop playsinline controls src="static/videos/4281Backward.MOV" width="100%"
-                       style="border-radius:10px; "></video>
+    .video-container {
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+    }
 
-              </div>
+    .video-container video {
+      width: 100%;
+      display: block;
+    }
+
+    .video-title {
+      font-size: 1rem;
+      text-align: center;
+      margin: 10px 0;
+      font-style: italic;
+    }
+
+    /* 自定义滚动条样式 */
+    .gallery-container::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .gallery-container::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px;
+    }
+
+    .gallery-container::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+
+    .gallery-container::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Diverse Motions</h2>
+      
+      <div class="gallery-container">
+        <div class="gallery">
+          <!-- Video 1 -->
+          <div class="gallery-item">
+            <div class="video-container">
+              <video autoplay muted loop playsinline controls src="static/videos/4276ForwardBriskly.MOV"></video>
             </div>
+            <p class="video-title">A person is moving forward briskly</p>
+          </div>
 
-            <br>
-
-            <div class="row">
-              <div class="col">
-                  <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> <i>A person shuffles from the left to the right, then shuffles back to the left</i></h3>
-                  <video autoplay muted loop playsinline controls src="static/videos/4287RightLeft.MOV" width="100%"
-                         style="border-radius:10px; "></video>
-              </div>
-              <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> <i>A person is standing and making a strumming gesture</i></h3>
-                <video autoplay muted loop playsinline controls src="static/videos/4300Strumming.MOV" width="100%"
-                       style="border-radius:10px; "></video>
-
-              </div>
+          <!-- Video 2 -->
+          <div class="gallery-item">
+            <div class="video-container">
+              <video autoplay muted loop playsinline controls src="static/videos/4281Backward.MOV"></video>
             </div>
+            <p class="video-title">A person walking backwards slowly</p>
+          </div>
 
-            <br>
-
-            <div class="row">
-              <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> <i>A man waves his right hand</i></h3>
-                  <video autoplay muted loop playsinline controls src="static/videos/4463WaveRightHand.MOV" width="100%"
-                         style="border-radius:10px; "></video>
-
-              </div>
-              <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> <i>A person claps his hands</i></h3>
-                <video autoplay muted loop playsinline controls src="static/videos/4307ClapHands.MOV" width="100%"
-                       style="border-radius:10px; "></video>
-
-              </div>
+          <!-- Video 3 -->
+          <div class="gallery-item">
+            <div class="video-container">
+              <video autoplay muted loop playsinline controls src="static/videos/4463WaveRightHand.MOV"></video>
             </div>
+            <p class="video-title">A man waves his right hand</p>
+          </div>
 
-            <br>
-
-            <div class="row">
-              <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> <i>A man pats his left hand with his right hand</i></h3>
-                  <video autoplay muted loop playsinline controls src="static/videos/4292PatHand.MOV" width="100%"
-                         style="border-radius:10px; "></video>
-
-              </div>
-              <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> <i>A person raised both their hands</i></h3>
-                <video autoplay muted loop playsinline controls src="static/videos/4298RaiseHands.MOV" width="100%"
-                       style="border-radius:10px; "></video>
-
-              </div>
+          <!-- Video 4 -->
+          <div class="gallery-item">
+            <div class="video-container">
+              <video autoplay muted loop playsinline controls src="static/videos/4287RightLeft.MOV"></video>
             </div>
+            <p class="video-title">A person shuffles from the left to the right, then shuffles back to the left</p>
+          </div>
 
-            <br>
+          <!-- Video 5 -->
+          <div class="gallery-item">
+            <div class="video-container">
+              <video autoplay muted loop playsinline controls src="static/videos/4300Strumming.MOV"></video>
+            </div>
+            <p class="video-title">A person is standing and making a strumming gesture</p>
+          </div>
 
-          </td>
-        </tr>
-      </div> 
+          <!-- Video 6 -->
+          <div class="gallery-item">
+            <div class="video-container">
+              <video autoplay muted loop playsinline controls src="static/videos/4307ClapHands.MOV"></video>
+            </div>
+            <p class="video-title">A person claps his hands</p>
+          </div>
+
+          <!-- Video 7 -->
+          <div class="gallery-item">
+            <div class="video-container">
+              <video autoplay muted loop playsinline controls src="static/videos/4292PatHand.MOV"></video>
+            </div>
+            <p class="video-title">A man pats his left hand with his right hand</p>
+          </div>
+
+          <!-- Video 8 -->
+          <div class="gallery-item">
+            <div class="video-container">
+              <video autoplay muted loop playsinline controls src="static/videos/4298RaiseHands.MOV"></video>
+            </div>
+            <p class="video-title">A person raised both their hands</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</body>
+</html>
 
 <!-- 2. Transition -->
 
