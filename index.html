@@ -70,7 +70,7 @@
                     <a href="https://bikezhang106.github.io/" target="_blank">Bike Zhang</a>,
                   </span>
                   <span class="author-block">
-                    <a href="https://qiayuanl.netlify.app/" target="_blank">Qiayuan Liao</a>,
+                    <a href="https://qiayuanl.github.io" target="_blank">Qiayuan Liao</a>,
                   </span>
                   <span class="author-block">
                     <a href="https://scholar.google.com/citations?user=nepkga0AAAAJ&hl=en" target="_blank">Yuman Gao</a>,
@@ -94,6 +94,24 @@
                   <img src="static/images/ucb-logo.png" width="20%" style="margin-right: 100px;"></img>
                   <img src="static/images/ustc-logo.png" width="55%" style="margin-right: 0px;"></img>
                   <br><br>
+
+
+<!-- TLDR -->
+<section class="section" style="padding-top: 1.5rem;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">TLDR</h2>
+        <div class="content has-text-centered">
+          <p style="font-size: 1.2rem;">
+            An end-to-end method enabling humanoid robots to interpret and execute diverse whole-body motions directly from natural language commands.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- TLDR -->
             
 
                   <div class="column has-text-centered">
@@ -423,7 +441,32 @@
   </div>
 </section>
 
-<!-- 5. Robustness -->
+
+<!-- 5. LLM -->
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Integration with LLM</h2>
+        <tr>
+          <td>
+            <div class="row">
+              <div class="col">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">LLM translating <i>There is a friend 3 meters in front of you, what should you do?</i> into a sequence of text commands</h3>
+                <video autoplay muted loop playsinline controls src="static/videos/4527LLM.MOV" width="50%"
+                  style="border-radius:10px; display: block; margin: 0 auto;"></video>
+              </div>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<!-- 6. Robustness -->
 
 <section class="section">
   <div class="container">
@@ -456,51 +499,8 @@
   </div>
 </section>
 
-<!-- 6. LLM -->
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Integration with LLM</h2>
-        <tr>
-          <td>
-            <div class="row">
-              <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">LLM translating <i>There is a friend 3 meters in front of you, what should you do?</i> into a sequence of text commands</h3>
-                <video autoplay muted loop playsinline controls src="static/videos/4527LLM.MOV" width="50%"
-                  style="border-radius:10px; display: block; margin: 0 auto;"></video>
-              </div>
-            </div>
-            <br>
-          </td>
-        </tr>
-      </div> 
-    </div>
-  </div>
-</section>
-
 
 <!-- End Demo Section -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            General-purpose humanoid robots are expected to interact intuitively with humans, enabling seamless integration into daily life. Natural language provides the most accessible medium for this purpose. However, translating languages into humanoid whole-body motions remains a significant challenge, primarily due to the gap between linguistic understanding and physical actions. In this work, we present an end-to-end, language-directed policy for real-world humanoid control. Our approach combines reinforcement learning with policy distillation, allowing a single neural network to interpret language commands and execute corresponding physical actions directly. To enhance motion diversity and compositionality, we incorporate a Conditional Variational Autoencoder (CVAE) structure. The resulting policy achieves agile and versatile whole-body behaviors conditioned on language inputs, with smooth transitions between various motions, enabling iterative and adaptable control. We validate the efficacy and generalizability of our method through extensive simulations and real-world experiments, demonstrating robust whole-body control.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
