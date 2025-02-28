@@ -127,17 +127,6 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- Github link -->
                   <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
@@ -172,10 +161,18 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <div class="video-container" style="position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0; overflow: hidden;">
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/JWNLMUUAsYs" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+          
+      </div>
     </div>
   </div>
 </section>
@@ -332,15 +329,14 @@
 
             <div class="row">
               <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Wave -> Run -> Wave (Side View)</h3>
                   <video autoplay muted loop playsinline controls src="static/videos/4477WaveRunWave.MOV" width="100%"
                          style="border-radius:10px; "></video>
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Wave -> Run -> Wave (Side View)</h3>
               </div>
               <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Wave -> Run -> Wave (Front View)</h3>
                 <video autoplay muted loop playsinline controls src="static/videos/9850WaveRunWave.MOV" width="100%"
                        style="border-radius:10px; "></video>
-
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Wave -> Run -> Wave (Front View)</h3>
               </div>
             </div>
 
@@ -348,14 +344,14 @@
 
             <div class="row">
               <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Walk -> Run -> Wave</h3>
                   <video autoplay muted loop playsinline controls src="static/videos/4522WalkRunWave.MOV" width="100%"
                          style="border-radius:10px; "></video>
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Walk -> Run -> Wave</h3>
               </div>
               <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Command Loop Over: <i>A person walks forward then turns around and walks back</i></h3>
                 <video autoplay muted loop playsinline controls src="static/videos/4284TurnAround.MOV" width="100%"
                        style="border-radius:10px; "></video>
+                       <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Command Loop Over: <i>A person walks forward then turns around and walks back</i></h3>
 
               </div>
             </div>
@@ -381,20 +377,20 @@
 
             <div class="row">
               <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> <i>A person walks forward</i></h3>
                   <video autoplay muted loop playsinline controls src="static/videos/4514ThreeWalk1.MOV" width="100%"
                          style="border-radius:10px; "></video>
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> <i>A person walks forward</i></h3>
               </div>
               <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> <i>A person moves ahead</i></h3>
                 <video autoplay muted loop playsinline controls src="static/videos/4515ThreeWalk2.MOV" width="100%"
                        style="border-radius:10px; "></video>
 
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> <i>A person moves ahead</i></h3>
               </div>
               <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> <i>A person moves forward</i></h3>
                 <video autoplay muted loop playsinline controls src="static/videos/4517ThreeWalk3.MOV" width="100%"
                        style="border-radius:10px; "></video>
+                       <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> <i>A person moves forward</i></h3>
 
               </div>
             </div>
@@ -420,15 +416,15 @@
             <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Interpolation of <i>A person is moving forward briskly</i> and <i>A person shuffles from the left to the right, then shuffles back to the left</i></h3>
             <div class="row">
               <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Side View</h3>
                   <video autoplay muted loop playsinline controls src="static/videos/4599Interpolation.MOV" width="100%"
                          style="border-radius:10px; "></video>
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Side View</h3>
               </div>
               <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Front View</h3>
                 <video autoplay muted loop playsinline controls src="static/videos/9926Interpolation.MOV" width="100%"
                        style="border-radius:10px; "></video>
 
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Front View</h3>
               </div>
             </div>
 
@@ -478,15 +474,15 @@
 
             <div class="row">
               <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Recover from Kicking</h3>
                   <video autoplay muted loop playsinline controls src="static/videos/4551KickRecover.MOV" width="100%"
                          style="border-radius:10px; "></video>
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Recover from Kicking</h3>
               </div>
               <div class="col">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Recover from Pushing</h3>
                 <video autoplay muted loop playsinline controls src="static/videos/4553PushRecover.MOV" width="100%"
                        style="border-radius:10px; "></video>
 
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Recover from Pushing</h3>
               </div>
             </div>
 
